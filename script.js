@@ -51,6 +51,37 @@ function playRound(playerSelection, computerSelection) {
       return "It's a draw! " + computerSelection + " vs. " + playerSelection;
     }
 }
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-alert(playRound(playerSelection, computerSelection));
+
+function game() {
+  let score = [0, 0]
+
+  for (let i=0; i<5; i++) {
+      playerSelection = prompt("Rock, Paper, or Scissors?");
+      computerSelection = getComputerChoice();
+      roundResult = playRound(playerSelection, computerSelection);
+
+      if(roundResult.includes("win")){
+          score[0] += 1;
+      }
+      if(roundResult.includes("lose")){
+          score[1] += 1;
+      }
+      console.log(roundResult);
+  }
+  
+  if (score[0] > score[1]){
+      console.log("You win out of 5 rounds!");
+  }
+  else if (score[0] < score[1]){
+      console.log("You lost out of 5 rounds!");
+  }
+  else if (score[0] === score[1]){
+      console.log("It was a draw out of 5 rounds!");
+  }
+
+}
+
+game();
+// const playerSelection = "rock";
+// const computerSelection = getComputerChoice();
+// alert(playRound(playerSelection, computerSelection));
