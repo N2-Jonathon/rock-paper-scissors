@@ -1,7 +1,20 @@
+function getComputerChoice(){
+  randomNum = Math.floor(Math.random() * 3) + 1;
+
+  if (randomNum === 1) {
+    return "rock"
+  }
+  else if (randomNum === 2) {
+    return "paper"
+  }
+  else if (randomNum === 3) {
+    return "scissors"
+  }
+}
+
 function playRound(playerSelection, computerSelection) {
     var winner;
     playerSelection = playerSelection.toLowerCase();
-    computerSelection = computerSelection.toLowerCase();
 
     if(playerSelection === "rock") {
         if(computerSelection === "paper") {
