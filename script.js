@@ -1,5 +1,8 @@
 function playRound(playerSelection, computerSelection) {
     var winner;
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
+
     if(playerSelection === "rock") {
         if(computerSelection === "paper") {
             winner = "computer";
