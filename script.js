@@ -47,4 +47,10 @@ function playRound(playerSelection, computerSelection) {
     else if (winner === "computer") {
       return "You lose! " + computerSelection + " beats " + playerSelection;
     }
+    else if (winner === undefined) {
+      return "It's a draw! " + computerSelection + " vs. " + playerSelection;
+    }
 }
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+alert(playRound(playerSelection, computerSelection));
