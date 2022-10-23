@@ -70,7 +70,7 @@ function game() {
 
 }
 
-game();
+// game();
 // const playerSelection = "rock";
 // const computerSelection = getComputerChoice();
 // alert(playRound(playerSelection, computerSelection));

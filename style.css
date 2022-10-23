@@ -1,0 +1,66 @@
+body {
+  background-color: dodgerblue;
+  margin: 0;
+  color: azure;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #1e3d58;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: azure;
+  font-size: 2.5em;
+}
+
+.main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.score-box {
+  width: 170px;
+}
+
+.sign {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.score {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 1em;
+}
+
+.card {
+  height: 10em;
+  border: 2px solid azure;
+  border-radius: 10px;
+  padding:0;
+  flex: 1;
+  margin: 0;
+} */
