@@ -47,6 +47,28 @@ body {
   font-weight: bold;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-square {
+  width: 160px;
+  height: 160px;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+  background-color: #2b4879;
+}
+
+.btn:hover{
+  background-color: #3b64aa;
+}
+
 /* 
 .container {
   display: flex;
